@@ -42,6 +42,7 @@
             this.labelputkfailu = new System.Windows.Forms.Label();
             this.f1txtputfile = new System.Windows.Forms.TextBox();
             this.f1btnOpenfile = new System.Windows.Forms.Button();
+            this.f1btnadd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.f1nudRazm)).BeginInit();
             this.SuspendLayout();
@@ -77,12 +78,13 @@
             // 
             // f1btnSave
             // 
-            this.f1btnSave.Location = new System.Drawing.Point(597, 382);
+            this.f1btnSave.Location = new System.Drawing.Point(487, 383);
             this.f1btnSave.Name = "f1btnSave";
             this.f1btnSave.Size = new System.Drawing.Size(100, 23);
             this.f1btnSave.TabIndex = 4;
             this.f1btnSave.Text = "Сохранить";
             this.f1btnSave.UseVisualStyleBackColor = true;
+            this.f1btnSave.Click += new System.EventHandler(this.f1btnSave_Click);
             // 
             // labelnapr
             // 
@@ -163,11 +165,22 @@
             this.f1btnOpenfile.UseVisualStyleBackColor = true;
             this.f1btnOpenfile.Click += new System.EventHandler(this.f1btnOpenfile_Click);
             // 
+            // f1btnadd
+            // 
+            this.f1btnadd.Location = new System.Drawing.Point(597, 383);
+            this.f1btnadd.Name = "f1btnadd";
+            this.f1btnadd.Size = new System.Drawing.Size(100, 23);
+            this.f1btnadd.TabIndex = 14;
+            this.f1btnadd.Text = "Добавить";
+            this.f1btnadd.UseVisualStyleBackColor = true;
+            this.f1btnadd.Click += new System.EventHandler(this.f1btnadd_Click);
+            // 
             // Ekz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 409);
+            this.Controls.Add(this.f1btnadd);
             this.Controls.Add(this.f1btnOpenfile);
             this.Controls.Add(this.f1txtputfile);
             this.Controls.Add(this.labelputkfailu);
@@ -207,6 +220,7 @@
         private System.Windows.Forms.Label labelputkfailu;
         private System.Windows.Forms.TextBox f1txtputfile;
         private System.Windows.Forms.Button f1btnOpenfile;
+        private System.Windows.Forms.Button f1btnadd;
     }
 }
 

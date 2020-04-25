@@ -36,6 +36,38 @@ namespace ekz
             }
             return st;
         }
+        public static void AddUpdate(int id, string Napravlenie, string Prodolzitelnost, string Cena)
+        {
+            List<string> ist = ReadLines();
+            if (id == 0)
+            {
+                foreach (string s in ist)
+                {
+                    string[] ss = s.Split(';');
+                    if (Convert.ToInt32(ss[0]) > id)
+                    {
+                        id = Convert.ToInt32(ss[0]);
+                    }
+                }
+                id++;
+                string st = id.ToString() + ";"
+                    + Napravlenie + ";" + Prodolzitelnost + ";" + Cena;
+                ist.Add(st);
+            }
+            else
+            {
+                for (int i = 0; i < ist.Count; i++)
+                {
+                    if (ist[i].StartsWith(id.ToString() + ";"))
+                    {
+                        ist[i] = id.ToString() + ";"
+                    + Napravlenie + ";" + Prodolzitelnost + ";" + Cena;
+                        break;
+                    }
+                }
+            }
+            SaveFile(ist);
+        }
         public static DataTable ReadTable()
         {
             DataTable dt = new DataTable();
