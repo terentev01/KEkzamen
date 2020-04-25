@@ -23,32 +23,8 @@ namespace ekz
             f1txtNaprav.Visible = false;
             f1txtProdolz.Visible = false;
             f1txtCena.Visible = false;
-            f1btnSave.Visible = false;
-            labelputkfailu.Visible = false;
-            f1txtputfile.Visible = false;
-            f1btnOpenfile.Visible = false;
-
-            int n = Convert.ToInt32(f1nudRazm.Value);
+            f1btnadd.Visible = false;            
         }
-
-        private void f1btnOk_Click(object sender, EventArgs e)
-        {
-            labelnapr.Visible = true;
-            labelprod.Visible = true;
-            labelcena.Visible = true;
-            f1txtNaprav.Visible = true;
-            f1txtProdolz.Visible = true;
-            f1txtCena.Visible = true;
-            f1btnSave.Visible = true;
-            labelputkfailu.Visible = true;
-            f1txtputfile.Visible = true;
-            f1btnOpenfile.Visible = true;
-
-            labelrazm.Visible = false;
-            f1nudRazm.Visible = false;
-            f1btnOk.Visible = false;
-        }
-
         private void FillData()
         {
             dataGridView1.DataSource = FileWork.ReadTable();
@@ -63,6 +39,14 @@ namespace ekz
                 {
                     f1txtputfile.Text = ofd.FileName;
                     FileWork.FilePath = ofd.FileName;
+                    FillData();
+                    labelnapr.Visible = true;
+                    labelprod.Visible = true;
+                    labelcena.Visible = true;
+                    f1txtNaprav.Visible = true;
+                    f1txtProdolz.Visible = true;
+                    f1txtCena.Visible = true;
+                    f1btnadd.Visible = true;
 
 
                 }
@@ -72,12 +56,6 @@ namespace ekz
                 }
             }
         }
-
-        private void f1btnSave_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void f1btnadd_Click(object sender, EventArgs e)
         {
             if (f1txtNaprav.Text != "" && f1txtProdolz.Text != "" && f1txtCena.Text != "")
@@ -87,8 +65,9 @@ namespace ekz
                 cll.Prodolzitelnost = f1txtProdolz.Text;
                 cll.Cena = f1txtCena.Text;
                 cll.Save();
+                FillData();
             }
-            else { MessageBox.Show("Все поля обязательны к заполнению!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            else { MessageBox.Show("Заполните все поля!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
     }
 }

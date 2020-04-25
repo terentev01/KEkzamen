@@ -32,19 +32,14 @@
             this.f1txtNaprav = new System.Windows.Forms.TextBox();
             this.f1txtProdolz = new System.Windows.Forms.TextBox();
             this.f1txtCena = new System.Windows.Forms.TextBox();
-            this.f1btnSave = new System.Windows.Forms.Button();
             this.labelnapr = new System.Windows.Forms.Label();
             this.labelprod = new System.Windows.Forms.Label();
             this.labelcena = new System.Windows.Forms.Label();
-            this.labelrazm = new System.Windows.Forms.Label();
-            this.f1nudRazm = new System.Windows.Forms.NumericUpDown();
-            this.f1btnOk = new System.Windows.Forms.Button();
             this.labelputkfailu = new System.Windows.Forms.Label();
             this.f1txtputfile = new System.Windows.Forms.TextBox();
             this.f1btnOpenfile = new System.Windows.Forms.Button();
             this.f1btnadd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.f1nudRazm)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -76,16 +71,6 @@
             this.f1txtCena.Size = new System.Drawing.Size(100, 20);
             this.f1txtCena.TabIndex = 3;
             // 
-            // f1btnSave
-            // 
-            this.f1btnSave.Location = new System.Drawing.Point(487, 383);
-            this.f1btnSave.Name = "f1btnSave";
-            this.f1btnSave.Size = new System.Drawing.Size(100, 23);
-            this.f1btnSave.TabIndex = 4;
-            this.f1btnSave.Text = "Сохранить";
-            this.f1btnSave.UseVisualStyleBackColor = true;
-            this.f1btnSave.Click += new System.EventHandler(this.f1btnSave_Click);
-            // 
             // labelnapr
             // 
             this.labelnapr.AutoSize = true;
@@ -113,36 +98,10 @@
             this.labelcena.TabIndex = 7;
             this.labelcena.Text = "Цена";
             // 
-            // labelrazm
-            // 
-            this.labelrazm.AutoSize = true;
-            this.labelrazm.Location = new System.Drawing.Point(12, 307);
-            this.labelrazm.Name = "labelrazm";
-            this.labelrazm.Size = new System.Drawing.Size(93, 13);
-            this.labelrazm.TabIndex = 8;
-            this.labelrazm.Text = "Размер массива";
-            // 
-            // f1nudRazm
-            // 
-            this.f1nudRazm.Location = new System.Drawing.Point(12, 325);
-            this.f1nudRazm.Name = "f1nudRazm";
-            this.f1nudRazm.Size = new System.Drawing.Size(120, 20);
-            this.f1nudRazm.TabIndex = 9;
-            // 
-            // f1btnOk
-            // 
-            this.f1btnOk.Location = new System.Drawing.Point(12, 352);
-            this.f1btnOk.Name = "f1btnOk";
-            this.f1btnOk.Size = new System.Drawing.Size(75, 23);
-            this.f1btnOk.TabIndex = 10;
-            this.f1btnOk.Text = "OK";
-            this.f1btnOk.UseVisualStyleBackColor = true;
-            this.f1btnOk.Click += new System.EventHandler(this.f1btnOk_Click);
-            // 
             // labelputkfailu
             // 
             this.labelputkfailu.AutoSize = true;
-            this.labelputkfailu.Location = new System.Drawing.Point(227, 325);
+            this.labelputkfailu.Location = new System.Drawing.Point(12, 307);
             this.labelputkfailu.Name = "labelputkfailu";
             this.labelputkfailu.Size = new System.Drawing.Size(74, 13);
             this.labelputkfailu.TabIndex = 11;
@@ -150,14 +109,14 @@
             // 
             // f1txtputfile
             // 
-            this.f1txtputfile.Location = new System.Drawing.Point(230, 342);
+            this.f1txtputfile.Location = new System.Drawing.Point(12, 327);
             this.f1txtputfile.Name = "f1txtputfile";
             this.f1txtputfile.Size = new System.Drawing.Size(100, 20);
             this.f1txtputfile.TabIndex = 12;
             // 
             // f1btnOpenfile
             // 
-            this.f1btnOpenfile.Location = new System.Drawing.Point(230, 369);
+            this.f1btnOpenfile.Location = new System.Drawing.Point(12, 354);
             this.f1btnOpenfile.Name = "f1btnOpenfile";
             this.f1btnOpenfile.Size = new System.Drawing.Size(100, 23);
             this.f1btnOpenfile.TabIndex = 13;
@@ -184,13 +143,9 @@
             this.Controls.Add(this.f1btnOpenfile);
             this.Controls.Add(this.f1txtputfile);
             this.Controls.Add(this.labelputkfailu);
-            this.Controls.Add(this.f1btnOk);
-            this.Controls.Add(this.f1nudRazm);
-            this.Controls.Add(this.labelrazm);
             this.Controls.Add(this.labelcena);
             this.Controls.Add(this.labelprod);
             this.Controls.Add(this.labelnapr);
-            this.Controls.Add(this.f1btnSave);
             this.Controls.Add(this.f1txtCena);
             this.Controls.Add(this.f1txtProdolz);
             this.Controls.Add(this.f1txtNaprav);
@@ -198,7 +153,6 @@
             this.Name = "Ekz";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.f1nudRazm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,13 +164,9 @@
         private System.Windows.Forms.TextBox f1txtNaprav;
         private System.Windows.Forms.TextBox f1txtProdolz;
         private System.Windows.Forms.TextBox f1txtCena;
-        private System.Windows.Forms.Button f1btnSave;
         private System.Windows.Forms.Label labelnapr;
         private System.Windows.Forms.Label labelprod;
         private System.Windows.Forms.Label labelcena;
-        private System.Windows.Forms.Label labelrazm;
-        private System.Windows.Forms.NumericUpDown f1nudRazm;
-        private System.Windows.Forms.Button f1btnOk;
         private System.Windows.Forms.Label labelputkfailu;
         private System.Windows.Forms.TextBox f1txtputfile;
         private System.Windows.Forms.Button f1btnOpenfile;

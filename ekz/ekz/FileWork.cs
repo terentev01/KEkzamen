@@ -75,9 +75,6 @@ namespace ekz
             dt.Columns.Add("Направление поездки");
             dt.Columns.Add("Продолжительность");
             dt.Columns.Add("Цена");
-            dt.Columns.Add("Номер телефона");
-            dt.Columns.Add("Email");
-            dt.Columns.Add("Адрес проживания");
             List<string> ist = ReadLines();
             foreach (string s in ist)
             {
