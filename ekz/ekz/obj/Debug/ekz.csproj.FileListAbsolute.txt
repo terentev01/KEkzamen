@@ -1,0 +1,10 @@
+C:\Users\Терентьев\source\repos\ekz\ekz\bin\Debug\ekz.exe.config
+C:\Users\Терентьев\source\repos\ekz\ekz\bin\Debug\ekz.exe
+C:\Users\Терентьев\source\repos\ekz\ekz\bin\Debug\ekz.pdb
+C:\Users\Терентьев\source\repos\ekz\ekz\obj\Debug\ekz.csprojAssemblyReference.cache
+C:\Users\Терентьев\source\repos\ekz\ekz\obj\Debug\ekz.Ekz.resources
+C:\Users\Терентьев\source\repos\ekz\ekz\obj\Debug\ekz.Properties.Resources.resources
+C:\Users\Терентьев\source\repos\ekz\ekz\obj\Debug\ekz.csproj.GenerateResource.cache
+C:\Users\Терентьев\source\repos\ekz\ekz\obj\Debug\ekz.csproj.CoreCompileInputs.cache
+C:\Users\Терентьев\source\repos\ekz\ekz\obj\Debug\ekz.exe
+C:\Users\Терентьев\source\repos\ekz\ekz\obj\Debug\ekz.pdb
