@@ -39,6 +39,9 @@
             this.labelrazm = new System.Windows.Forms.Label();
             this.f1nudRazm = new System.Windows.Forms.NumericUpDown();
             this.f1btnOk = new System.Windows.Forms.Button();
+            this.labelputkfailu = new System.Windows.Forms.Label();
+            this.f1txtputfile = new System.Windows.Forms.TextBox();
+            this.f1btnOpenfile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.f1nudRazm)).BeginInit();
             this.SuspendLayout();
@@ -134,11 +137,40 @@
             this.f1btnOk.UseVisualStyleBackColor = true;
             this.f1btnOk.Click += new System.EventHandler(this.f1btnOk_Click);
             // 
+            // labelputkfailu
+            // 
+            this.labelputkfailu.AutoSize = true;
+            this.labelputkfailu.Location = new System.Drawing.Point(227, 325);
+            this.labelputkfailu.Name = "labelputkfailu";
+            this.labelputkfailu.Size = new System.Drawing.Size(74, 13);
+            this.labelputkfailu.TabIndex = 11;
+            this.labelputkfailu.Text = "Путь к файлу";
+            // 
+            // f1txtputfile
+            // 
+            this.f1txtputfile.Location = new System.Drawing.Point(230, 342);
+            this.f1txtputfile.Name = "f1txtputfile";
+            this.f1txtputfile.Size = new System.Drawing.Size(100, 20);
+            this.f1txtputfile.TabIndex = 12;
+            // 
+            // f1btnOpenfile
+            // 
+            this.f1btnOpenfile.Location = new System.Drawing.Point(230, 369);
+            this.f1btnOpenfile.Name = "f1btnOpenfile";
+            this.f1btnOpenfile.Size = new System.Drawing.Size(100, 23);
+            this.f1btnOpenfile.TabIndex = 13;
+            this.f1btnOpenfile.Text = "Открыть файл";
+            this.f1btnOpenfile.UseVisualStyleBackColor = true;
+            this.f1btnOpenfile.Click += new System.EventHandler(this.f1btnOpenfile_Click);
+            // 
             // Ekz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 409);
+            this.Controls.Add(this.f1btnOpenfile);
+            this.Controls.Add(this.f1txtputfile);
+            this.Controls.Add(this.labelputkfailu);
             this.Controls.Add(this.f1btnOk);
             this.Controls.Add(this.f1nudRazm);
             this.Controls.Add(this.labelrazm);
@@ -172,6 +204,9 @@
         private System.Windows.Forms.Label labelrazm;
         private System.Windows.Forms.NumericUpDown f1nudRazm;
         private System.Windows.Forms.Button f1btnOk;
+        private System.Windows.Forms.Label labelputkfailu;
+        private System.Windows.Forms.TextBox f1txtputfile;
+        private System.Windows.Forms.Button f1btnOpenfile;
     }
 }
 

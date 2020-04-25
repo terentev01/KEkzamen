@@ -12,7 +12,7 @@ namespace ekz
 {
    
     public partial class Ekz : Form
-    { 
+    {
         public Ekz()
         {
             InitializeComponent();
@@ -24,6 +24,8 @@ namespace ekz
             f1txtProdolz.Visible = false;
             f1txtCena.Visible = false;
             f1btnSave.Visible = false;
+
+            int n = Convert.ToInt32(f1nudRazm.Value);
         }
 
         private void f1btnOk_Click(object sender, EventArgs e)
@@ -39,6 +41,26 @@ namespace ekz
             labelrazm.Visible = false;
             f1nudRazm.Visible = false;
             f1btnOk.Visible = false;
+        }
+
+        private void f1btnOpenfile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Text Files(.txt)|.txt| All files(.)|.";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    f1txtputfile.Text = ofd.FileName;
+                    FileWork.FilePath = ofd.FileName;
+
+
+                }
+                catch
+                {
+                    MessageBox.Show("Формат не соответсвует требуемому.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
